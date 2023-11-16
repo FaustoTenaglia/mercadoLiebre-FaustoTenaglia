@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Bienvenidxs a MercadoLiebre</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<header class="header-login"> 
+  <div class="top-header2">
+    <div class="logo2">
+      <img
+        src="images/logo-mercado-liebre.svg"
+        alt="Logo de MercadoLiebre"
+      />
+    </div>
+    <div class="form2" action="#" method="GET">
+      <input type="text" class="input2" placeholder="Buscar productos, marcas y más">
+      <button type="submit" class="submit2"><i class="fa fa-search"></i></button>
+    </div>
+    <a href="/" class="back-button">←</a>
+</header>
+<body class="body-login">
+    <form action="/" method="POST" class="form-login">
+        <label for="name">Nombre y apellido:</label><br />
+        <input type="text" id="name" name="name" minlength="2" required title="El nombre debe tener más de un carácter."/><br />
+        <label for="username">Nombre de usuario:</label><br />
+        <input type="text" id="username" name="username" /><br />
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" /><br />
+        <label for="dob">Fecha de nacimiento:</label><br />
+        <input type="date" id="dob" name="dob" /><br />
+        <label for="address">Domicilio:</label><br />
+        <input type="text" id="address" name="address" /><br />
+        <label for="profile">Perfil del usuario:</label><br />
+        <select id="profile" name="profile">
+          <option value="buyer">Comprar</option>
+          <option value="seller">Vender</option></select
+        ><br />
+        <label for="interests">Categorías de interés:</label><br />
+        <input
+          type="checkbox"
+          id="electro"
+          name="interests"
+          value="Electro"
+        />
+        <label for="electro">Electro</label><br />
+        <input type="checkbox" id="fashion" name="interests" value="Moda" />
+        <label for="fashion">Moda</label><br />
+        <input type="checkbox" id="home" name="interests" value="Hogar" />
+        <label for="home">Hogar</label><br />
+        <input
+          type="checkbox"
+          id="toys"
+          name="interests"
+          value="Juguetería"
+        />
+        <label for="toys">Juguetería</label><br />
+        <input
+          type="checkbox"
+          id="health"
+          name="interests"
+          value="Vida sana"
+        />
+        <label for="health">Vida sana</label><br />
+        <label for="photo">Foto de usuario:</label><br />
+        <input type="file" id="photo" name="photo" /><br />
+        <label for="password">Contraseña:</label><br />
+        <input type="password" id="password" name="password" /><br />
+        <label for="confirm_password">Confirmar contraseña:</label><br />
+        <input
+          type="password"
+          id="confirm_password"
+          name="confirm_password"
+        /><br />
+        <button type="submit" class="enviar">Enviar </button>
+        <button type="reset" class="enviar" >Borrar </button>
+      </form>
+</body>
+</html>
